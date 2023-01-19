@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script src="https://kit.fontawesome.com/34835f81f0.js" crossorigin="anonymous"></script>
+
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .login-form {
+            border: 2px solid black;
+            border-radius: 1em;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+
+        .login-form h2 {
+            text-align: center;
+        }
+
+        .login-form input {
+            width: 200px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"] {
+            width: 150px;
+            background-color: goldenrod;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Portfolio</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Notes</a>
+            </span>
+            <span class="icons">
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+    <div class="container">
+        <form class="login-form" action="">
+            <h2>Please Login</h2>
+            <input type="email" placeholder="Type your Email">
+            <input type="password" placeholder="Type your Password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>
